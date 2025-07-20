@@ -5,7 +5,7 @@ mongoose.connect('mongodb+srv://sakanchha111:xwI5Bc6GJjSrGA7O@cluster0.q8tbgls.m
 .catch(err=>console.log("coudn't connect to the server ",err))
 
 // backend/db.js
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
@@ -40,6 +40,4 @@ const userSchema = new mongoose.Schema({
 // Create a model from the schema
 const User = mongoose.model('User', userSchema);
 
-module.exports = {
-	User
-};
+module.exports = User;
